@@ -7,3 +7,6 @@ You must input the full path including the file extension as the input file loca
 
 # BUGS
 Please report any bugs you experience while using the software to marnold@evmwd.net
+
+#TEST
+this is to verify that we are on the main branch
