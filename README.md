@@ -14,3 +14,7 @@ this is to verify that we are on the main branch
 # LAST UPDATE
 
 2/24/2021
+
+# LOCAL DEVELOPMENT
+
+open index.html in your browser
