@@ -4,24 +4,6 @@ import time
 import calendar
 import os
 
-# welcome to the analyte analyzer
-print('Welcome to the Analyte Analyzer!')
-for i in range(3):
-    print('-'*33)
-    time.sleep(0.5)
-# data path
-print('\n')
-tp = input('Please enter the path to the data source file: ')
-print('-'*49)
-time.sleep(1)
-print('\n')
-p = input('Please enter the path where you wish the output files to be stored: ')
-print('-'*69)
-time.sleep(1)
-print('\n')
-print('Analyzing data and sending to storage path')
-print('-'*43)
-
 def analyte_function(trax_path,path):
 
     # change path to the path where we want analyzed data to end up
@@ -62,8 +44,3 @@ def analyte_function(trax_path,path):
         df = df.groupby(['Regulators ID'])['Reading Result'].agg('mean')
         df.to_excel(f'{analyte}_{month}_{year}.xlsx')
 
-
-analyte_function(tp, p)
-print('\n')
-print(f'Data complete, proceed to {p}')
-print('\n')
